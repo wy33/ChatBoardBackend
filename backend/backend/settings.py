@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'message',
 ]
 
-CORS_ALLOWED_ORIGINS=['http://localhost:3000']
+# CORS_ALLOWED_ORIGINS=['http://localhost:3000']
+CORS_ALLOWED_ORIGINS=['http://chat-board-website.s3-website.us-east-2.amazonaws.com']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
