@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-il1##yf8mcqje3(83tm@o3#zm)+c(+ylm$kbmre%#w=6p1i0i0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False   # False for production
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.119.99.5', '0.0.0.0']  # Public IPv4 address
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 # CORS_ALLOWED_ORIGINS=['http://localhost:3000']
-CORS_ALLOWED_ORIGINS=['http://chat-board-website.s3-website.us-east-2.amazonaws.com']
+CORS_ALLOWED_ORIGINS=['http://chat-board-website.s3-website.us-east-2.amazonaws.com']   # Frontend app
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
